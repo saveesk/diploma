@@ -1,0 +1,51 @@
+
+
+.form{
+	
+	
+	margin: 10px;
+	width: 400px;
+	padding: 55px;
+	border-radius: 10px; /*заокруглені края */
+	box-shadow: 0 4px 16px #ccc;/*тінь x=0 y=4 радіус розмиття=16*/
+	 
+
+}
+
+.form_group{
+
+	position: relative;
+	margin-bottom: 20px; /*відступ знизу */
+}
+
+.label{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	color: gray;
+	transition: 0.3s;
+}
+
+.input{
+	width: 100%;
+	padding: 0 0 10px 0;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;/*тільки нижня границя */
+	background-color: transparent;
+	outline: none;
+	transition: 0.3s;
+}
+
+/*поле ввода знаходиться в фокусі */
+.input:focus ~ .label,
+.input:not(:placeholder-shown) ~ .label {
+	top: -18px;
+	font-size: 12px;
+	color: #e0e0e0;
+}
+
+
+
+
+
